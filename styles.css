@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+body, input, button {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: #fff;
+  padding: 24px 100px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 8px solid #EA473B;
+  border-bottom: 2px solid #EEEEF0;
+}
+
+header .btn button {
+  font-size: 16px;
+  width: 180px;
+  height: 56px;
+  border: 0;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  /* background: #EA473B;
+  color: #fff; */
+}
+
+header .btn .btn-login {
+  background: transparent;
+  color: #EA473B;
+  border: 1px solid #EA473B;
+  margin-right: 8px;
+}
+
+header .btn .btn-register {
+  background: #EA473B;
+  color: #fff;
+}
+
+header .btn .btn-register:hover {
+  background: #c74c44;
+}
+
+main {
+  width: 100%;
+  padding: 32px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main img {
+  width: 500px;
+}
+
+main h3 {
+  color: #3C3C3C;
+  font-weight: normal;
+  max-width: 400px;
+  margin-right: 40px;
+}
+
+.menu {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  header {
+    padding: 24px 50px;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 32px 50px;
+  }
+
+  main img {
+    margin-top: 60px;
+    width: 100%;
+  }
+
+  .menu {
+    display: block;
+  }
+}
